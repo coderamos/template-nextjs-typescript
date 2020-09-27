@@ -8,7 +8,7 @@ export const Container = styled.h2`
     font-weight: ${theme.font.light};
 
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.large};
+      font-size: ${theme.font.sizes.medium};
     `}
   `}
 `;

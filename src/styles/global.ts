@@ -25,7 +25,6 @@ const GlobalStyles = createGlobalStyle`
     src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
         url('/fonts/poppins-v12-latin-600.woff2') format('woff2');
   }
-
   * {
     box-sizing: border-box;
     margin: 0;
@@ -39,13 +38,11 @@ const GlobalStyles = createGlobalStyle`
     html {
       font-size: 62.5%;
     }
-
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
     }
   `}
-
 `;
 
 export default GlobalStyles;
