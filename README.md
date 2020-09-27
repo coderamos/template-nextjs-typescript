@@ -56,6 +56,11 @@ yarn test:watch
 yarn storybook
 ```
 
+```jsx
+// creates a new component. to create a Button component, for example, run: yarn generate Button
+yarn generate <ComponentName>
+```
+
 _Learn how to install `yarn` through the [official documentation](https://yarnpkg.com/pt-BR/docs/install)._
 
 ---
