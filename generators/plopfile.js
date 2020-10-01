@@ -1,4 +1,4 @@
-module.exports = (plop) => {
+module.exports = plop => {
   plop.setGenerator('component', {
     description: 'Create a component',
     prompts: [
@@ -30,5 +30,5 @@ module.exports = (plop) => {
         templateFile: 'templates/test.tsx.hbs'
       }
     ]
-  })
-}
+  });
+};
