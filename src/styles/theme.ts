@@ -22,12 +22,11 @@ export default {
     }
   },
   colors: {
-    black: '#000000',
-    grayWeb: '#808080',
     primary: '#FFCB00',
-    primaryHover: '#FFBA00',
     secondary: '#171717',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    grayWeb: '#808080',
+    black: '#000000'
   },
   spacings: {
     xxsmall: '0.8rem',
