@@ -65,7 +65,7 @@ _Learn how to install `yarn` through the [official documentation](https://yarnpk
 
 ---
 
-### MAIN TECNOLOGIES USED
+### MAIN TECHNOLOGIES USED
 
 #### [next](https://nextjs.org/)
 
