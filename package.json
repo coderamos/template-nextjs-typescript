@@ -1,7 +1,7 @@
 {
-  "name": "example-store-client",
+  "name": "template-nextjs-typescript",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
