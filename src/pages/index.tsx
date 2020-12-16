@@ -1,13 +1,14 @@
-import { Container } from '~/components/Container';
-import Heading from '~/components/Heading';
+import { Container } from 'components/Container';
+import Heading from 'components/Heading';
+
 import * as s from './styles';
 
 export default function Home() {
   return (
-    <s.Container>
-      <Container>
-        <Heading>template-nextjs-typescript/</Heading>
-      </Container>
-    </s.Container>
+    <Container>
+      <s.Wrapper>
+        <Heading>boilerplate-nextjs-typescript/</Heading>
+      </s.Wrapper>
+    </Container>
   );
 }

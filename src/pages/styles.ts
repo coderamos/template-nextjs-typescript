@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.main`
+export const Wrapper = styled.main`
   ${() => css`
     align-items: center;
     display: flex;

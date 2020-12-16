@@ -1,5 +1,5 @@
 {
-  "name": "template-nextjs-typescript",
+  "name": "boilerplate-nextjs-typescript",
   "version": "1.0.0",
   "private": false,
   "scripts": {
@@ -7,15 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "jest",
     "test:watch": "yarn test --watch",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && yarn typecheck"
     }
   },
   "lint-staged": {

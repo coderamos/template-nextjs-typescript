@@ -1,5 +1,5 @@
-import theme from '~/styles/theme';
-import { renderWithTheme } from '~/utils/tests/helpers';
+import theme from 'styles/theme';
+import { renderWithTheme } from 'utils/tests/helpers';
 
 import { Container } from '.';
 
@@ -18,6 +18,7 @@ describe('<Container />', () => {
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
+        width: 100%;
         max-width: 130rem;
         margin-left: auto;
         margin-right: auto;

@@ -1,6 +1,6 @@
 {
-  "name": "template-nextjs-typescript",
-  "short_name": "template-nextjs-typescript",
+  "name": "boilerplate-nextjs-typescript",
+  "short_name": "boilerplate-nextjs-typescript",
   "icons": [
     {
       "src": "/img/icon-192.png",
