@@ -19,5 +19,5 @@ export const HeadingDefault: Story<HeadingProps> = args => (
 );
 
 HeadingDefault.args = {
-  children: 'Heading'
+  children: 'Example Title'
 };
