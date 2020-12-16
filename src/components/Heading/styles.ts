@@ -3,7 +3,7 @@ import media from 'styled-media-query';
 
 import { HeadingProps } from '.';
 
-export const Container = styled.h2<HeadingProps>`
+export const Wrapper = styled.h2<HeadingProps>`
   ${({ theme, color }) => css`
     color: ${theme.colors[color!]};
     font-size: ${theme.font.sizes.small};

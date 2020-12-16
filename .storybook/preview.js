@@ -1,4 +1,9 @@
+import { addDecorator } from '@storybook/react';
+
+import { withTests } from '@storybook/addon-jest';
+import { withNextRouter } from 'storybook-addon-next-router';
 import { ThemeProvider } from 'styled-components';
+
 import GlobalStyles from 'styles/global';
 import theme from 'styles/theme';
 
@@ -11,10 +16,13 @@ export const decorators = [
   )
 ];
 
+import results from '../.jest-test-results.json';
+
 export const parameters = {
+  a11y: { disable: true },
   controls: { expanded: true },
   backgrounds: {
-    default: 'secondary',
+    default: 'white',
     values: [
       {
         name: 'primary',
@@ -25,13 +33,21 @@ export const parameters = {
         value: theme.colors.secondary
       },
       {
-        name: 'black',
-        value: theme.colors.black
-      },
-      {
         name: 'white',
         value: theme.colors.white
+      },
+      {
+        name: 'alternative',
+        value: theme.colors.alternative
       }
     ]
+  },
+  options: {
+    storySort: {
+      method: 'alphabetical'
+    }
   }
 };
+
+addDecorator(withTests({ results }));
+addDecorator(withNextRouter());

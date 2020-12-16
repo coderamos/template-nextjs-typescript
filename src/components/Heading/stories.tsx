@@ -8,11 +8,16 @@ export default {
     children: {
       type: 'string'
     }
+  },
+  parameters: {
+    jest: ['Heading.test.tsx']
   }
 } as Meta;
 
-export const Default: Story<HeadingProps> = args => <Heading {...args} />;
+export const HeadingDefault: Story<HeadingProps> = args => (
+  <Heading {...args} />
+);
 
-Default.args = {
+HeadingDefault.args = {
   children: 'Heading'
 };

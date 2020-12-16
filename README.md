@@ -52,6 +52,11 @@ yarn test:watch
 ```
 
 ```jsx
+// creates .jest-test-results.json file to @storybook/addon-jest
+yarn test:generate-output
+```
+
+```jsx
 // runs storybook on http://localhost:6006/
 yarn storybook
 ```

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Container>
       <s.Wrapper>
-        <Heading>boilerplate-nextjs-typescript/</Heading>
+        <Heading color="white">boilerplate-nextjs-typescript/</Heading>
       </s.Wrapper>
     </Container>
   );
