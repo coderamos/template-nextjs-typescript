@@ -25,20 +25,12 @@ export const parameters = {
     default: 'white',
     values: [
       {
-        name: 'primary',
-        value: theme.colors.primary
-      },
-      {
-        name: 'secondary',
-        value: theme.colors.secondary
-      },
-      {
         name: 'white',
         value: theme.colors.white
       },
       {
-        name: 'alternative',
-        value: theme.colors.alternative
+        name: 'black',
+        value: theme.colors.black
       }
     ]
   },

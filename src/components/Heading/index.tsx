@@ -1,13 +1,13 @@
-import * as s from './styles';
+import { ColorStyleProps } from 'types/globals';
 
-type ColorTypes = 'primary' | 'secondary' | 'white' | 'alternative';
+import * as s from './styles';
 
 export type HeadingProps = {
   children: React.ReactNode;
-  color?: ColorTypes;
+  color?: ColorStyleProps;
 };
 
-const Heading = ({ children, color = 'secondary' }: HeadingProps) => (
+const Heading = ({ children, color = 'white' }: HeadingProps) => (
   <s.Wrapper color={color}>{children}</s.Wrapper>
 );
 

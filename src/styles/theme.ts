@@ -23,14 +23,8 @@ export default {
     }
   },
   colors: {
-    primary: '#FFCB00',
-    secondary: '#171717',
-    alternative: '#05D9E8',
     white: '#FFFFFF',
-    black: '#000000',
-    ceriseRed: '#E72176',
-    gallery: '#EAEAEA',
-    gray: '#808080'
+    black: '#000000'
   },
   spacings: {
     xxsmall: '0.8rem',
