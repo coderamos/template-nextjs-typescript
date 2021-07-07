@@ -1,11 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { renderWithTheme } from '../../utils/tests/helpers';
 
 import {{pascalCase name}} from '.';
 
 describe('<{{pascalCase name}} />', () => {
-  it('should render the heading', () => {
-    render(<{{pascalCase name}} />);
+  it('should render the {{pascalCase name}} component', () => {
+    renderWithTheme(<{{pascalCase name}} />);
 
-    expect(screen.getByRole('heading', { name: /{{pascalCase name}}/i })).toBeInTheDocument();
+    expect(screen.getByLabelText('{{pascalCase name}} component')).toBeInTheDocument();
   });
 });
