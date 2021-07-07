@@ -18,17 +18,6 @@
     "postinstall": "husky install",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn typecheck"
-    }
-  },
-  "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
-    ]
-  },
   "dependencies": {
     "@styled-icons/evil": "^10.18.0",
     "@styled-icons/fa-solid": "^10.18.0",
@@ -65,13 +54,19 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.0",
+    "husky": "^5.1.1",
     "jest": "^27.0.6",
     "jest-styled-components": "^7.0.4",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "10.5.4",
     "plop": "^2.7.4",
     "prettier": "^2.3.2",
     "storybook-addon-next-router": "^2.0.4",
     "typescript": "^4.3.5"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
   }
 }
