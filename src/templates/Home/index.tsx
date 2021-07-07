@@ -1,7 +1,6 @@
 import BaseTemplate from 'templates/Base';
 
 import { Container } from 'components/Container';
-import Heading from 'components/Heading';
 
 import * as s from './styles';
 
@@ -9,7 +8,7 @@ const Home = () => (
   <BaseTemplate>
     <Container>
       <s.Wrapper>
-        <Heading>boilerplate-nextjs-typescript/</Heading>
+        <h1>boilerplate-nextjs-typescript/</h1>
       </s.Wrapper>
     </Container>
   </BaseTemplate>
